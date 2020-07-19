@@ -103,7 +103,7 @@ export default function Loans() {
           >
             <Icons.Customers />
           </SortingKey>
-          <Tooltip handle={"loans_header_customer"}>Kunde</Tooltip>
+          <Tooltip handle={"loans_header_customer"}>Handle</Tooltip>
           {extended && (
             <>
               <SortingKey

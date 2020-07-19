@@ -44,7 +44,7 @@ export default function EditLoan({ isOpen, close }: TEditLoan) {
 
   const { saveCreatedLoan, saveEditedLoan } = useLoans();
   const { color, secondary, dark } = useAuthLocation();
-
+  
   const [customer, setCustomer] = useState();
   const [view, setView] = useState("details" as ViewTypes);
 
@@ -135,7 +135,7 @@ export default function EditLoan({ isOpen, close }: TEditLoan) {
           <>
             <InputWrapper>
               <InputLabel>
-                <Icons.Customers /> Kunde
+                <Icons.Customers /> Handle
               </InputLabel>
               <FakeInput onClick={() => setView("customer")}>
                 <Names target="customers" id={customer} />

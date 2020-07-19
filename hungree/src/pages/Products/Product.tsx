@@ -95,7 +95,7 @@ const Product: React.FC<TProductWithEdit> = ({
         border="bottom"
       >
         <Icons.History />
-        <Tooltip handle={handles.history}>Historikk</Tooltip>
+        <Tooltip handle={handles.history}>History</Tooltip>
       </Buttons.Click>
       <Buttons.Click
         data-tip
@@ -104,7 +104,7 @@ const Product: React.FC<TProductWithEdit> = ({
         border="bottom"
       >
         <Icons.Edit />
-        <Tooltip handle={handles.edit}>Rediger</Tooltip>
+        <Tooltip handle={handles.edit}>Edit</Tooltip>
       </Buttons.Click>
     </StyledProduct>
   );

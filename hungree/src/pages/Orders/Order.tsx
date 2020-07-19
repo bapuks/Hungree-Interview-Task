@@ -67,7 +67,7 @@ const Order: React.FC<TOrder> = ({ order, edit, columns, extended }) => {
           {expanded ? <Icons.Close /> : <Icons.List />}
         </Buttons.Click>
         <Tooltip handle={handles.expand}>
-          {expanded ? "Skjul produkter" : "Vis produkter"}
+          {expanded ? "Hide products" : "Show products"}
         </Tooltip>
         <Buttons.Click
           onClick={() => edit(orderID)}
@@ -78,8 +78,8 @@ const Order: React.FC<TOrder> = ({ order, edit, columns, extended }) => {
         </Buttons.Click>
         <Tooltip handle={handles.edit}>Rediger</Tooltip>
         <Buttons.Confirm
-          title="Slett bestilling"
-          message="Vil du slette denne bestillingen?"
+          title="Delete order"
+          message="Do you want to delete this order?"
           onConfirm={() => {
             deleteOrder(orderID);
           }}
@@ -90,8 +90,8 @@ const Order: React.FC<TOrder> = ({ order, edit, columns, extended }) => {
         </Buttons.Confirm>
         <Tooltip handle={handles.delete}>Slett</Tooltip>
         <Buttons.Confirm
-          title="Motta bestilling"
-          message="Bekreft mottak av bestilling"
+          title="Receive order"
+          message="Confirm of receipt order"
           getDate={true}
           onConfirm={date => {
             receivedOrder(orderID, ordered, date);
@@ -101,7 +101,7 @@ const Order: React.FC<TOrder> = ({ order, edit, columns, extended }) => {
         >
           <Icons.Orders />
         </Buttons.Confirm>
-        <Tooltip handle={handles.receive}>Mottak</Tooltip>
+        <Tooltip handle={handles.receive}>receive</Tooltip>
       </TableItem>
       {expanded && (
         <ExpandedTableItem expanded={expanded} borderColor={dark}>

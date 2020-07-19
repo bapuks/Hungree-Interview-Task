@@ -234,7 +234,7 @@ const InfoRow: React.FC<InfoRowProps> = ({ name, amount }) => {
       }}
     >
       <p>{amount}x</p>
-      <p>-></p>
+      <p>-&gt;</p>
       <p>{name}</p>
     </div>
   );

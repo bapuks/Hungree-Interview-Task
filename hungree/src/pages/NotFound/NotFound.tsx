@@ -25,9 +25,9 @@ const StyledButton = styled.button`
 export default () => {
   return (
     <Styled404>
-      404 Denne siden finnes ikke!
+      404 The page does not exist!
       <StyledButton onClick={() => navigate("/")}>
-        Gå til hovedside
+      Go to the main page
       </StyledButton>
     </Styled404>
   );

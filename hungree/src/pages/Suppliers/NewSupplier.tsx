@@ -23,9 +23,9 @@ const NewSupplier: React.FC<NewSupplierProps> = ({ isOpen, onClose }) => {
   const handleSave = () => {
     setMessage("");
     if (name.length < 1) {
-      setMessage("Fyll inn navn!");
+      setMessage("Fill in name!");
     } else if (supplierNames.includes(name)) {
-      setMessage("Fyll inn et unikt navn!");
+      setMessage("Enter a unique name!");
     } else {
       dispatch(
         addChange({
@@ -44,7 +44,7 @@ const NewSupplier: React.FC<NewSupplierProps> = ({ isOpen, onClose }) => {
     <NewModal
       isOpen={isOpen}
       onClose={onClose}
-      title={"Ny leverandør"}
+      title={"New supplier"}
       name={name}
       setName={setName}
       message={message}

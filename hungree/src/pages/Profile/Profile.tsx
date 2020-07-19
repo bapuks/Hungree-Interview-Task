@@ -41,13 +41,13 @@ const UserData = () => {
 
   return (
     <StyledUserData>
-      <DataKey>Fornavn</DataKey>
+      <DataKey>First name</DataKey>
       <p>{user.firstName}</p>
-      <DataKey>Etternavn</DataKey>
+      <DataKey>Last name</DataKey>
       <p>{user.lastName}</p>
       {!isDemo && (
         <>
-          <DataKey>Vis hint</DataKey>
+          <DataKey>Show hint</DataKey>
           <input
             type="checkbox"
             checked={user.settings.showTooltips}
@@ -56,7 +56,7 @@ const UserData = () => {
               alignSelf: "center"
             }}
           />
-          <DataKey>Automatisk Lagring</DataKey>
+          <DataKey>Auto Save</DataKey>
           <input
             type="checkbox"
             checked={user.settings.useAutoSave}
@@ -65,7 +65,7 @@ const UserData = () => {
               alignSelf: "center"
             }}
           />
-          <DataKey>Ventetid før lagring</DataKey>
+          <DataKey>Waiting before save</DataKey>
           <select
             value={timeToAutoSave}
             onChange={onAutoSaveTimeChange}
@@ -74,10 +74,10 @@ const UserData = () => {
               width: "50%"
             }}
           >
-            <option value={10000}>10 Sekunder</option>
-            <option value={30000}>30 Sekunder</option>
-            <option value={60000}>1 Minutt</option>
-            <option value={120000}>2 Minutter</option>
+            <option value={10000}>10 seconds</option>
+            <option value={30000}>30 seconds</option>
+            <option value={60000}>1 minute</option>
+            <option value={120000}>2 minute</option>
           </select>
         </>
       )}

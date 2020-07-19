@@ -107,7 +107,7 @@ const ProductHistory: React.FC<ProductHistoryProps> = ({ product, close }) => {
       label="Product History"
       name={product.name}
       columns={columns}
-      columnNames={["Type/ID", "Kunde/Leverandør", "Tidspunkt", "Antall"]}
+      columnNames={["Type/ID", "Customer/Supplier", "Time", "Quantity"]}
     >
       {combinedHistory.map(order => (
         <HistoryItem
@@ -144,11 +144,11 @@ const HistoryItem: React.FC<IHistoryItem> = ({ item, columns }) => {
   const type = () => {
     switch (item.type) {
       case "order":
-        return "Bestilling";
+        return "Order";
       case "sale":
-        return "Salg";
+        return "Sale";
       default:
-        return "Loans";
+        return "Loan";
     }
   };
 

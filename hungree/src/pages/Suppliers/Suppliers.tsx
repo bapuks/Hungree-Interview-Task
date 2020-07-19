@@ -63,7 +63,7 @@ const Suppliers = () => {
   return (
     <TableWrapper>
       <TableHeader bckColor={secondary}>
-        <Title>Leverandører</Title>
+        <Title>Supplier</Title>
         <HeaderButtons>
           <HeaderButton
             onClick={handleNewSupplier}
@@ -71,7 +71,7 @@ const Suppliers = () => {
             data-for={"supplier_header_add"}
           >
             <Icons.Add />
-            <Tooltip handle={"supplier_header_add"}>Ny leverandør</Tooltip>
+            <Tooltip handle={"supplier_header_add"}>New supplier</Tooltip>
           </HeaderButton>
         </HeaderButtons>
       </TableHeader>
@@ -90,7 +90,7 @@ const Suppliers = () => {
             data-for={"supplier_header_name"}
           >
             <Icons.Name />
-            <Tooltip handle={"supplier_header_name"}>Navn</Tooltip>
+            <Tooltip handle={"supplier_header_name"}>Name</Tooltip>
           </SortingKey>
         </ContentHeader>
         <ListWrapper>

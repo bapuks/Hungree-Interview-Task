@@ -14,25 +14,25 @@ export const removeNotification = (id: number) => ({
 
 export const notifications: { [key: string]: () => INotification } = {
   newChanges: () => ({
-    message: "Nye endringer oppdaget, last inn siden på nytt",
+    message: "New changes detected, reload the page",
     type: "warning",
     id: 1,
     timeout: 5
   }),
   savedChanges: () => ({
-    message: "Endringene ble lagret",
+    message: "Changes were saved",
     type: "success",
     id: 2,
     timeout: 2
   }),
   addedChange: () => ({
-    message: "Endring lagt inn i lagringskøen",
+    message: "Change added to storage queue",
     type: "info",
     id: Math.random(),
     timeout: 2
   }),
   savingError: () => ({
-    message: "Det oppsto en feil, last inn siden på nytt",
+    message: "An error occurred, please reload the page",
     type: "warning",
     id: 3,
     timeout: 5

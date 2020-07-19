@@ -64,7 +64,7 @@ export default function EditSale({ isOpen, close }: TEditSale) {
       case "details":
         return "Salg";
       case "customer":
-        return "Kunde";
+        return "Handle";
       case "products":
         return "Produkter";
       default:
@@ -162,7 +162,7 @@ export default function EditSale({ isOpen, close }: TEditSale) {
           <>
             <InputWrapper>
               <InputLabel>
-                <Icons.Customers /> Kunde
+                <Icons.Customers /> Handle
               </InputLabel>
               <FakeInput onClick={() => setView("customer")}>
                 <Names target="customers" id={customer} />

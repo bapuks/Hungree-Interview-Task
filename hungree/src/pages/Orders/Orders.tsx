@@ -67,7 +67,7 @@ export default function Orders() {
   return (
     <TableWrapper>
       <TableHeader bckColor={secondary}>
-        <Title>Bestillinger</Title>
+        <Title>Booking</Title>
         <HeaderButtons>
           <HeaderButton
             onClick={handleNewOrder}
@@ -75,7 +75,7 @@ export default function Orders() {
             data-for={"orders_header_add"}
           >
             <Icons.Add />
-            <Tooltip handle={"orders_header_add"}>Ny bestilling</Tooltip>
+            <Tooltip handle={"orders_header_add"}>New order</Tooltip>
           </HeaderButton>
         </HeaderButtons>
       </TableHeader>
@@ -109,13 +109,13 @@ export default function Orders() {
               data-for={"orders_header_ordered"}
             >
               <Icons.Calendar />
-              <Tooltip handle={"orders_header_ordered"}>Dato bestilt</Tooltip>
+              <Tooltip handle={"orders_header_ordered"}>Date ordered</Tooltip>
             </SortingKey>
           )}
 
           <Key data-tip data-for={"orders_header_amount"}>
             <Icons.ShoppingCart />
-            <Tooltip handle={"orders_header_amount"}>Antall produkter</Tooltip>
+            <Tooltip handle={"orders_header_amount"}>Number of products</Tooltip>
           </Key>
 
           <ExtendColumns extended={extended} setExtended={setExtended} />

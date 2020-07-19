@@ -62,7 +62,7 @@ const Customers = () => {
   return (
     <TableWrapper>
       <TableHeader bckColor={secondary}>
-        <Title>Kunder</Title>
+        <Title>Handler</Title>
         <HeaderButtons>
           <HeaderButton
             onClick={handleNewCustomer}

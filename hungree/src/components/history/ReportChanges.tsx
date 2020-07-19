@@ -176,7 +176,7 @@ const New: ChangeComponent = ({ change }) => {
 
 const Edit: ChangeComponent = ({ change }) => {
   return (
-    <>
+    <React.Fragment>
       <TargetInfo change={change} />
       {"changed" in change && (
         <div>
@@ -185,7 +185,7 @@ const Edit: ChangeComponent = ({ change }) => {
           ))}
         </div>
       )}
-    </>
+    </React.Fragment>
   );
 };
 
@@ -306,37 +306,37 @@ const EditProductAmount: ChangeComponent = ({ change }) => {
   }
 
   return (
-    <>
+    <React.Fragment>
       <TargetInfo change={change} />
       <p>
       Quantity: {oldValue} &gt; {newValue}
       </p>
       {reason && <p>Årsak: {reason}</p>}
-    </>
+      </React.Fragment>
   );
 };
 
 const SentOrReceived: ChangeComponent = ({ change }) => {
   return (
-    <>
+    <React.Fragment>
       <TargetInfo change={change} />
-    </>
+      </React.Fragment>
   );
 };
 
 const Delete: ChangeComponent = ({ change }) => {
   return (
-    <>
+    <React.Fragment>
       <TargetInfo change={change} />
-    </>
+    </React.Fragment>
   );
 };
 
 const Undo: ChangeComponent = ({ change }) => {
   return (
-    <>
+    <React.Fragment>
       <TargetInfo change={change} />
-    </>
+    </React.Fragment>
   );
 };
 

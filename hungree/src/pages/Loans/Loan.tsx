@@ -74,8 +74,8 @@ const Loan = ({ loan, edit, columns, extended }: TLoan) => {
         <Tooltip handle={handles.edit}>Rediger</Tooltip>
 
         <Buttons.Confirm
-          title="Slett Loans"
-          message="Vil du slette dette lånet?"
+          title="Delete Loan"
+          message="Do you want to cancel this loan?"
           disabled={dateSent != null}
           onConfirm={() => {
             deleteLoan(loanID);
@@ -89,7 +89,7 @@ const Loan = ({ loan, edit, columns, extended }: TLoan) => {
 
         <Buttons.Confirm
           title="Send Loans"
-          message="Bekreft sending av Loans"
+          message="Confirm Sending Loan"
           getDate={true}
           disabled={dateSent != null}
           onConfirm={date => sentLoan(loanID, ordered, date)}
@@ -101,8 +101,8 @@ const Loan = ({ loan, edit, columns, extended }: TLoan) => {
         <Tooltip handle={handles.send}>Send</Tooltip>
 
         <Buttons.Confirm
-          title="Motta Loans"
-          message="Bekreft mottak av Loans"
+          title="Receive Loan"
+          message="Confirm receipt of Loan"
           getDate={true}
           disabled={dateSent == null}
           onConfirm={date => receivedLoan(loanID, ordered, date)}

@@ -114,9 +114,9 @@ const EditSupplier: React.FC<EditSupplierProps> = ({
       >
         <TitleWrapper>
           <ModalTitle>
-            <Icons.Suppliers /> Leverandør #{supplier.supplierID}{" "}
+            <Icons.Suppliers /> Supplier #{supplier.supplierID}{" "}
           </ModalTitle>
-          {view !== "details" && <ModalSubtitle>Produkter</ModalSubtitle>}
+          {view !== "details" && <ModalSubtitle>Products</ModalSubtitle>}
         </TitleWrapper>
         {view !== "details" && (
           <ModalButton sideBorder="right" onClick={() => setView("details")}>
@@ -132,7 +132,7 @@ const EditSupplier: React.FC<EditSupplierProps> = ({
           <>
             <InputWrapper>
               <InputLabel>
-                <Icons.Suppliers /> Leverandør
+                <Icons.Suppliers /> Supplier
               </InputLabel>
               <TextInput
                 type="text"
@@ -141,7 +141,7 @@ const EditSupplier: React.FC<EditSupplierProps> = ({
               />
             </InputWrapper>
             <ProductWithEdit>
-              <CenteredText>Produkter</CenteredText>
+              <CenteredText>Products</CenteredText>
               <InputButton
                 bckColor={secondary}
                 onClick={() => setView("products")}

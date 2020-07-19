@@ -34,33 +34,32 @@ const RoutePage: FC<RoutePageProps> = ({
   </React.Suspense>
 );
 
-export const AuthRouter: FC = () => {
-  //https://github.com/reach/router/issues/242#issuecomment-467082358
+export const AuthRouter: FC = () => {  
   return (
     <Router primary={false}>
       <RoutePage
         component={Products}
         path={routes.HOME}
         fallback={TableSkeleton}
-        fbprops={{ title: "Produkter" }}
+        fbprops={{ title: "Products" }}
       />
       <RoutePage
         component={Orders}
         path={routes.ORDERS}
         fallback={TableSkeleton}
-        fbprops={{ title: "Bestillinger" }}
+        fbprops={{ title: "Order" }}
       />
       <RoutePage
         component={Suppliers}
         path={routes.SUPPLIERS}
         fallback={TableSkeleton}
-        fbprops={{ title: "Leverandører" }}
+        fbprops={{ title: "Supplier" }}
       />
       <RoutePage
         component={Sales}
         path={routes.SALES}
         fallback={TableSkeleton}
-        fbprops={{ title: "Salg" }}
+        fbprops={{ title: "Sales" }}
       />
       <RoutePage
         component={Loans}
@@ -72,7 +71,7 @@ export const AuthRouter: FC = () => {
         component={Customers}
         path={routes.CUSTOMERS}
         fallback={TableSkeleton}
-        fbprops={{ title: "Kunder" }}
+        fbprops={{ title: "Customers" }}
       />
       <RoutePage
         component={History}

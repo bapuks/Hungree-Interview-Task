@@ -183,7 +183,7 @@ export default function Products() {
           >
             {!showHidden ? <Icons.VisibilityOff /> : <Icons.Visibility />}
             <Tooltip handle={"product_header_visibility"}>
-              {showHidden ? "Skjul" : "Vis"} inaktive produkter
+              {showHidden ? "Hide" : "Show"} inactive products
             </Tooltip>
           </KeyButton>
         </ContentHeader>

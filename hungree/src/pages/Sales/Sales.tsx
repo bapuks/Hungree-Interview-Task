@@ -66,7 +66,7 @@ export default function Sales() {
   return (
     <TableWrapper>
       <TableHeader bckColor={secondary}>
-        <Title>Salg</Title>
+        <Title>Sale</Title>
         <HeaderButtons>
           <HeaderButton
             onClick={handleNewSale}
@@ -74,7 +74,7 @@ export default function Sales() {
             data-for={"sales_header_add"}
           >
             <Icons.Add />
-            <Tooltip handle={"sales_header_add"}>Nytt salg</Tooltip>
+            <Tooltip handle={"sales_header_add"}>New sale</Tooltip>
           </HeaderButton>
         </HeaderButtons>
       </TableHeader>
@@ -98,7 +98,7 @@ export default function Sales() {
             data-for={"sales_header_customer"}
           >
             <Icons.Customers />
-            <Tooltip handle={"sales_header_customer"}>Kunde</Tooltip>
+            <Tooltip handle={"sales_header_customer"}>Handle</Tooltip>
           </SortingKey>
 
           {extended && (
@@ -108,18 +108,18 @@ export default function Sales() {
               data-for={"sales_header_ordered"}
             >
               <Icons.Calendar />
-              <Tooltip handle={"sales_header_ordered"}>Dato bestilt</Tooltip>
+              <Tooltip handle={"sales_header_ordered"}>Date ordered</Tooltip>
             </SortingKey>
           )}
 
           <Key data-tip data-for={"sales_header_amount"}>
             <Icons.ShoppingCart />
-            <Tooltip handle={"sales_header_amount"}>Antall produkter</Tooltip>
+            <Tooltip handle={"sales_header_amount"}>Number of products</Tooltip>
           </Key>
 
           <Key data-tip data-for={"sales_header_ready"}>
             <Icons.Check />
-            <Tooltip handle={"sales_header_ready"}>Klar for sending</Tooltip>
+            <Tooltip handle={"sales_header_ready"}>Ready for shipment</Tooltip>
           </Key>
 
           <ExtendColumns extended={extended} setExtended={setExtended} />

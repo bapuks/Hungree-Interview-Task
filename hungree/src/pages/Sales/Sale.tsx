@@ -70,7 +70,7 @@ const Sale: React.FC<TSale> = ({ sale, edit, columns, extended }) => {
           {expanded ? <Icons.Close /> : <Icons.List />}
         </Buttons.Click>
         <Tooltip handle={handles.expand}>
-          {expanded ? "Skjul produkter" : "Vis produkter"}
+          {expanded ? "Hide products" : "Show products"}
         </Tooltip>
 
         <Buttons.Click
@@ -83,8 +83,8 @@ const Sale: React.FC<TSale> = ({ sale, edit, columns, extended }) => {
         <Tooltip handle={handles.edit}>Rediger</Tooltip>
 
         <Buttons.Confirm
-          title="Slett salg"
-          message="Vil du slette dette salget?"
+          title="Delete sale"
+          message="Do you want to delete this sale?"
           onConfirm={() => deleteSale(saleID)}
           data-tip
           data-for={handles.delete}
@@ -94,8 +94,8 @@ const Sale: React.FC<TSale> = ({ sale, edit, columns, extended }) => {
         <Tooltip handle={handles.delete}>Slett</Tooltip>
 
         <Buttons.Confirm
-          title="Send salg"
-          message="Bekreft sending av salg"
+          title="Send sale"
+          message="Confirm sending of sale"
           getDate={true}
           onConfirm={date => sendSale(saleID, ordered, date)}
           data-tip

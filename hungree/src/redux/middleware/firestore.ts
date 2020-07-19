@@ -114,7 +114,7 @@ const getAllFromLocalStorage = (
   localStorage: RootState,
   message: Function
 ) => {
-  shouldLog("Getting all data from localStorage");
+  shouldLog("Getting all data from local storage");
   Object.keys(keys).forEach(k => {
     localDataFromKey(k, dispatch, localStorage, message);
   });

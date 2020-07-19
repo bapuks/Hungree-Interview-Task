@@ -1,4 +1,4 @@
-/* eslint-disable default-case */
+
 import * as action from "../actions/ordersActions";
 import produce from "immer";
 import drafts from "./drafts";
