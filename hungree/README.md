@@ -37,6 +37,4 @@ store - Cross-Platform local storage
 4. Argument of type 'number' is not assignable to parameter of type 'SetStateAction<undefined>'.   TS2345   
    example: > 74 |     setCustomer(current.customerID);
    solution --> const [customer, setCustomer] = useState("customer" as any);
-   
-5. Could not find a declaration file for module 'react-modal'
-   solution --> const [customer, setCustomer] = useState(null);
+      
