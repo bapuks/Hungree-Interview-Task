@@ -33,8 +33,4 @@ store - Cross-Platform local storage
    
 3. Cannot find module 'react-datepicker' or its corresponding type declarations.  TS2307
    solution --> npm i -D @types/react-datepicker
-
-4. Argument of type 'number' is not assignable to parameter of type 'SetStateAction<undefined>'.   TS2345   
-   example: > 74 |     setCustomer(current.customerID);
-   solution --> const [customer, setCustomer] = useState("customer" as any);
       
